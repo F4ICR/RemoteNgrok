@@ -49,4 +49,4 @@ Puisque tout ceci à été développé dans le cadre du projet [RRFRemote](https
 
 La configuration à été tester avec gmail et est fonctionnelle a 100%, il sera évidemment nécessaire de créer un mot de passe application dans votre espace sécurité de gmail afin que le script RemoteNgrok puisse expédier le mail.
 
-73's QRO à tous et un merci particulier à Armel pour ses éclaircissement lorsque j'en ai eu besoin
+73's QRO à tous et un merci particulier à Armel pour ses éclaircissements lorsque j'en ai eu besoin
