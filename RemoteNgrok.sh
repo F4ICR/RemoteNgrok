@@ -26,7 +26,7 @@ curl http://127.0.0.1:4040/api/tunnels |grep -o '"public_url":"http://*.*.io"'>>
 sleep 5
 
 # On envoi le mail via curl avec pour contenu le ficher mail.txt
-curl --url 'smtps://smtp.gmail.com:465' --ssl-reqd --mail-from 'VOTRE_MAIL_EXPEDITEUR'\
+curl --url 'smtps://smtp.gmail.com:465' --ssl-reqd --mail-from 'ngrok@ngrok.com'\
  --mail-rcpt 'VOTRE_MAIL_RECEPTION' --upload-file mail.txt --user 'VOTRE_MAIL_ISP:VOTRE_MOT_DE_PASSE' --insecure
 
 else
