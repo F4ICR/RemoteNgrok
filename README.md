@@ -30,7 +30,7 @@ Saisir dans votre console ssh votre clé d'authentification :
 
 `./ngrok authtoken VOTRE_CLE`
 
-Ne poursuivez pas la suite du tuto de ngrok, le script [RemoteNgr.sh](https://github.com/F4ICR/RemoteNgrok/blob/main/RemoteNgrok.sh) que j'ai écrit va se charger du reste, j'explique :
+Ne poursuivez pas la suite du tuto sur le site de ngrok, le script [RemoteNgr.sh](https://github.com/F4ICR/RemoteNgrok/blob/main/RemoteNgrok.sh) que j'ai écrit va se charger du reste, j'explique :
 
 Le script va d'abord vérifier la présence du tunnel, en son absence le tunnel sera activé, ensuite il créera un fichier mail.txt avec les entêtes nécessaires pour expédition ultérieur, puis via l'api de ngrok on récupère l'url du tunnel dont nous aurons besoin et je ne conserve que l'adresse http que j'insère dans le mail.txt que j'ai préparé au préalable et pour finir j'envoie le fichier mail.txt sur votre adresse mail que vous aurez configurer.
 
