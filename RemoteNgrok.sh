@@ -15,7 +15,6 @@ nohup ./ngrok http -config=.ngrok2/ngrok.yml 3000 &
 sleep 5
 
 # Creation entete mail.txt pour l'envoi de la nouvelle URL du tunnel
-truncate -s 0 /root/mail.txt
 echo 'From: "ngrok" <ngrok@ngrok.com>' > mail.txt
 echo 'To: "Pascal" <pascal.paquet@gmail.com>' >> mail.txt
 echo 'Subject: Tunnel ngrok' >> mail.txt
