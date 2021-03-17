@@ -17,7 +17,7 @@ Télécharger la version correspondant à votre architecture, installé ngrok su
 
 Sur votre compte ngrok, une [clé d'authentification](https://dashboard.ngrok.com/get-started/setup) a été créée
 
-Ensuite, depuis la console ssh, executer la commande dans répertoire d'installation ngrok afin de le rendre executable :
+Ensuite, depuis la console ssh, executer la commande dans le répertoire d'installation ngrok afin de le rendre executable :
 
 `chmod +x ngrok`
 
