@@ -1,7 +1,7 @@
 # RemoteNgrok
-### Prise de contrôle distant derrière un routeur 4G via un tunnel ngrok en version free
+### Prise de contrôle distant derrière un routeur 4G via un tunnel ngrok en version gratuite
 
-Bonjour à tous, le but de ce tuto est de réalisé un tunnel via une solution gratuite derrière un routeur 4G. 
+Bonjour à tous, le but de ce tuto est de réaliser un tunnel via une solution gratuite derrière un routeur 4G. 
 Lorsque l'on est en 4G, on ne sort pas directement sur Internet, on est sur le réseau privé de l'opérateur et le trafic est ensuite routé vers Internet. 
 La conséquence est que l'on ne peut pas ouvrir de ports sur ce point de sortie et que le trafic entrant n'est pas possible :( 
 Une solution pour contourner ce problème est d'utiliser un service tunnel comme ngrok. 
