@@ -7,3 +7,4 @@ La conséquence est que l'on ne peut pas ouvrir de ports sur ce point de sortie 
 Une solution pour contourner ce problème est d'utiliser un service tunnel comme ngrok. 
 Le principe est d'initier une connexion permanente à un serveur externe (ngrok) depuis son LAN pour ouvrir un tunnel. 
 Cela permettra au trafic entrant de rentrer sur le serveur ngrok, passer dans le tunnel pour arriver sur son LAN
+
