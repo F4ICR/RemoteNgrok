@@ -22,7 +22,7 @@ echo 'Subject: Tunnel ngrok' >> mail.txt
 echo '.' >> mail.txt
 
 # On recupere l'URL via l'api et on decoupe la partie necessaire que l'on insere au fichier mail.txt qui sera envoyer
-curl http://127.0.0.1:4040/api/tunnels |grep -o '"public_url":"http://*.*.io"'>> mail.txt
+curl http://127.0.0.1:4040/api/tunnels |grep -o '"public_url":"http://*.*.io"' |cut -d ":" -f 2,3 >> mail.txt
 sleep 5
 
 # On envoi le mail via curl avec pour contenu le ficher mail.txt
