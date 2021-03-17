@@ -50,6 +50,6 @@ faites au clavier CTRL + X pour sortir de l'éditeur, confirmez les modification
 
 Puisque tout ceci à été développé dans le cadre du projet [RRFRemote](https://github.com/armel/RRFRemote) de F4HWN, il vous appartiendra ensuite de modifier le fichier settings.h du projet avec l'url du tunnel ngrok que vous aurez reçu par mail, puis de compiler et uploader à nouveau via [PlateformIO for VSCode](https://platformio.org/install/ide?install=vscode), vous devrez effectivement répéter cette opération uniquement si vous redémarrez votre HotSpot ou votre Link, sans quoi à défaut de recevoir un mail avec la nouvelle url du tunnel, vous n'aurez rien à faire, c'est que tout fonctionne bien.
 
-La configuration à été tester avec gmail et est fonctionnelle a 100%, il sera évidemment nécessaire de créer un mot de passe application dans votre espace sécurité de gmail afin que le script RemoteNgrok puisse expédier le mail.
+La configuration a été tester avec gmail et est fonctionnelle a 100%, il sera évidemment nécessaire de créer un mot de passe application dans votre espace sécurité de gmail afin que le script RemoteNgrok puisse expédier le mail.
 
 73's QRO à tous et un merci particulier à Armel pour ses éclaircissements lorsque j'en ai eu besoin
