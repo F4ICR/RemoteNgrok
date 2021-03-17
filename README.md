@@ -39,7 +39,7 @@ Inserer à la fin du fichier :
 
 `* * * * * root /root/RemoteNgrok.sh >/dev/null 2>&1`
 
-faites au clavier CTRL + X puis confirmer l'enregistrement des modifications apportées par OUI et ENTER, ensuite relancer le service cron avec la commande :
+faites au clavier CTRL + X pour sorie de l'éditeur, confirmez les modifications apportées par OUI et ENTER, ensuite relancer le service cron avec la commande :
 
 `service cron restart`
 
