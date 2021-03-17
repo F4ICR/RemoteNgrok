@@ -45,7 +45,7 @@ faites au clavier CTRL + X pour sortir de l'éditeur, confirmez les modification
 
 `service cron restart`
 
-Puisque tout ceci à été développé dans le cadre du projet RRFRemote de F4HWN, il vous appartiendra ensuite de modifier le fichier settings.h du projet RRFRemote avec l'url du tunnel ngrok que vous aurez recu par mail, puis de compiler et uploader à nouveau via [PlateformIO for VSCode](https://platformio.org/install/ide?install=vscode)
+Puisque tout ceci à été développé dans le cadre du projet RRFRemote de F4HWN, il vous appartiendra ensuite de modifier le fichier settings.h du projet RRFRemote avec l'url du tunnel ngrok que vous aurez recu par mail, puis de compiler et uploader à nouveau via [PlateformIO for VSCode](https://platformio.org/install/ide?install=vscode), vous devrez effectivement répéter cette opération uniquement si vous redemarrez votre HotSpot ou votre Link, sans quoi à défaut de recevoir un mail avec la nouvelle url du tunnel, vous n'aurez rien à faire, c'est que tout fonctionne bien.
 
 La configuration à été tester avec gmail et est fonctionnelle a 100%, il sera evidemment nécessaire de créer un mot de passe application dans votre espace sécurité de gmail afin que le script RemoteNgrok puisse expédier le mail.
 
