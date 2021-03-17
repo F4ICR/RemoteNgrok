@@ -31,4 +31,6 @@ Le script va d'abord vérifier la présence du tunnel, en son absence le tunnel 
 
 Puisque tout ceci à été dévellopé dans le cadre du projet RRFRemote de F4HWN, il vous appartiendra ensuite de modifier le fichier setting.h du projet RRFRemote avec l'url du tunnel ngrok que vous aurez recu par mail puis de compiler et uploader à nouveau via [PlateformIO for VSCode](https://platformio.org/install/ide?install=vscode)
 
-La configuration à été tester avec gmail et est fonctionnelle a 100%, il sera evidemment nécessaire de créer un mot de passe application dans votre espace sécurité de gmail
+La configuration à été tester avec gmail et est fonctionnelle a 100%, il sera evidemment nécessaire de créer un mot de passe application dans votre espace sécurité de gmail afin que le script RemoteNgrok puisse expédier le mail.
+
+73's QRO à tous
