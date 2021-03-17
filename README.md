@@ -29,6 +29,15 @@ Ne poursuivez pas la suite du tuto de ngrok, le script [RemoteNgr.sh](https://gi
 
 Le script va d'abord vérifier la présence du tunnel, en son absence le tunnel sera activé, ensuite il créera un fichier mail.txt avec les entêtes nécessaire pour expédition ultérieur, puis via l'api de ngrok on récupère l'url du tunnel dont nous aurons besoin et je ne conserve que l'adresse http que j'insere dans le mail.txt que j'ai péparé au péalable et pour finir j'envoi le fichier mail.txt sur votre adresse mail que vous aurez configurer.
 
+Afin d'automatiser ce tunnel, j'ai crée dans le crontab une tache pour le tunnel, ce qui permet de l'executer automatiquement à chaque démarrage ou de le relancer en cas de défaillance.
+
+Depuis la console ssh executez :
+`nano /etc/crontab`
+Inserer à la fin du fichier :
+`* * * * * root /root/RemoteNgrok.sh >/dev/null 2>&1`
+faites au clavier CTRL + X puis confirmer l'enregistrement des modifications apportées par oui et ENTER, ensuite relancer le service cron avec la commande :
+`service cron restart`
+
 Puisque tout ceci à été dévellopé dans le cadre du projet RRFRemote de F4HWN, il vous appartiendra ensuite de modifier le fichier setting.h du projet RRFRemote avec l'url du tunnel ngrok que vous aurez recu par mail puis de compiler et uploader à nouveau via [PlateformIO for VSCode](https://platformio.org/install/ide?install=vscode)
 
 La configuration à été tester avec gmail et est fonctionnelle a 100%, il sera evidemment nécessaire de créer un mot de passe application dans votre espace sécurité de gmail afin que le script RemoteNgrok puisse expédier le mail.
