@@ -32,9 +32,11 @@ Saisir dans votre console ssh votre clé d'authentification :
 
 Ne poursuivez pas la suite du tuto sur le site de ngrok, le script [RemoteNgr.sh](https://github.com/F4ICR/RemoteNgrok/blob/main/RemoteNgrok.sh) que j'ai écrit va se charger du reste, j'explique :
 
-Le script va d'abord vérifier la présence du tunnel, en son absence le tunnel sera activé, ensuite il créera un fichier mail.txt avec les entêtes nécessaires pour expédition ultérieur, puis via l'api de ngrok on récupère l'url du tunnel dont nous aurons besoin et je ne conserve que l'adresse http que j'insère dans le mail.txt que j'ai préparé au préalable et pour finir j'envoie le fichier mail.txt sur votre adresse mail que vous aurez configurer.
+Le script va d'abord vérifier la présence du tunnel, en son absence le tunnel sera activé, ensuite il créera un fichier mail.txt avec les entêtes nécessaires pour expédition ultérieur, puis via l'api de ngrok on récupère l'url du tunnel dont nous aurons besoin et je ne conserve que l'adresse http que j'insère dans le mail.txt que j'ai préparé au préalable.
 
-Afin d'automatiser ce tunnel, j'ai créé dans le crontab une tache, ce qui permet de l'exécuter automatiquement à chaque démarrage de votre HotSpot ou de votre Link RRF et de le relancer en cas de défaillance du processus uniquement.
+Pour finir le script envoie le fichier mail.txt sur votre adresse mail que vous aurez configurer.
+
+Afin d'automatiser ce tunnel, je crée dans le crontab une tache qui vérifiera régulièrement si le tunnel est actif entre autre et qui permet également de l'exécuter automatiquement à chaque démarrage de votre HotSpot ou de votre Link RRF.
 
 Depuis la console ssh exécutez la commande suivante :
 
