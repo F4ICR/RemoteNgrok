@@ -2,7 +2,7 @@
 # F4ICR 2021
 
 # On verifie la presence du processus
-testNGROK=$(pgrep -f ngrok |wc -l)
+testNGROK=$(pgrep -f "ngrok.yml 3000" |wc -l)
 
 # Si different de 1
 if [ $testNGROK != 1 ]
