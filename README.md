@@ -52,4 +52,14 @@ Puisque tout ceci à été développé dans le cadre du projet [RRFRemote](https
 
 La configuration a été tester avec gmail et est fonctionnelle a 100%, il sera évidemment nécessaire de créer un mot de passe application dans votre espace sécurité de gmail afin que le script RemoteNgrok puisse expédier le mail.
 
+# Autres paramétrages
+
+Dans l'éventualité ou vous voudriez mettre en place un tunnel ssh par exemple, il sera nécessaire de modifier les lignes suivantes
+
+> `testNGROK=$(pgrep -f "ngrok.yml 22" |wc -l)` (ligne 5, pour le port ssh)
+
+> `nohup ./ngrok tcp -config=.ngrok2/ngrok.yml 22 &` (ligne 14, pour le port ssh)
+
+> `curl http://127.0.0.1:4041/api/tunnels |grep -o '"public_url":"tcp://.*"'|cut -d ":" -f 2,3,4|cut -d "," -f 1 >> mail.txt` (ligne 24, le découpage change)
+
 73's QRO à tous et un merci particulier à Armel pour ses éclaircissements lorsque j'en ai eu besoin
