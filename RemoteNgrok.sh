@@ -17,7 +17,7 @@ sleep 5
 # Creation entete mail.txt pour l'envoi de la nouvelle URL du tunnel
 echo 'From: "ngrok" <ngrok@ngrok.com>' > mail.txt
 echo 'To: "VOTRE_PRENOM_OU_AUTRE" <VOTRE_MAIL>' >> mail.txt
-echo 'Subject: Tunnel ngrok' >> mail.txt
+echo 'Subject: Tunnel http ngrok' >> mail.txt
 echo '.' >> mail.txt
 
 # Recuperation de l'URL via l'api et on decoupe la partie necessaire que l'on insere au fichier mail.txt qui sera envoyer
