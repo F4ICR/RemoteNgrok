@@ -56,14 +56,13 @@ La configuration a été tester avec gmail et est fonctionnelle a 100%, il sera 
 
 # Autres paramétrages
 
-Dans l'éventualité où vous voudriez mettre en place un tunnel ssh par exemple, il sera nécessaire de modifier les lignes suivantes :
+Dans l'éventualité où vous voudriez mettre en place un tunnel ssh (port 22) par exemple, en plus du port à changé, le découpage de la ligne 24 change aussi :
 
-> `testNGROK=$(pgrep -f "ngrok.yml 22" |wc -l)` (ligne 5) le port 22 pour le ssh
+> `testNGROK=$(pgrep -f "ngrok.yml 22" |wc -l)` (ligne 5)
 
-> `nohup ./ngrok tcp -config=.ngrok2/ngrok.yml 22 &` (ligne 14) idem que la ligne 5
+> `nohup ./ngrok tcp -config=.ngrok2/ngrok.yml 22 &` (ligne 14)
 
-> `curl http://127.0.0.1:4040/api/tunnels |grep -o '"public_url":"tcp://.*"'|cut -d ":" -f 2,3,4|cut -d "," -f 1 >> mail.txt` (ligne 24) le découpage change
-
+> `curl http://127.0.0.1:4040/api/tunnels |grep -o '"public_url":"tcp://.*"'|cut -d ":" -f 2,3,4|cut -d "," -f 1 >> mail.txt` (ligne 24)
 
 
 73's QRO à tous et un merci particulier à Armel pour ses éclaircissements lorsque j'en ai eu besoin
