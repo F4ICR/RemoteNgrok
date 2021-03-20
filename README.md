@@ -66,4 +66,5 @@ Dans l'éventualité où vous voudriez mettre en place un tunnel ssh, modifiez l
 
 
 
-73's QRO à tous et un merci particulier à Armel pour ses éclaircissements lorsque j'en ai eu besoin
+
+73s à tous et un merci particulier à Armel pour ses éclaircissements lorsque j'en ai eu besoin
