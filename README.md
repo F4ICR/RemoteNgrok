@@ -58,7 +58,7 @@ La configuration a été tester avec gmail et est fonctionnelle a 100%, il sera 
 
 Dans l'éventualité où vous voudriez mettre en place un tunnel ssh (port 22), en plus du port à changé, le découpage de la ligne 24 change aussi :
 
-> `testNGROK=$(pgrep -f "ngrok.yml 22" |wc -l)` (ligne 5)
+> `testNGROK=$(pgrep -f 'ngrok.yml 22' |wc -l)` (ligne 5)
 
 > `nohup ./ngrok tcp -config=.ngrok2/ngrok.yml 22 &` (ligne 14)
 
