@@ -66,9 +66,9 @@ Dans l'éventualité où vous voudriez mettre en place un tunnel ssh, modifiez l
 
 Concernant la ligne 24, il peut y avoir un port différent pour l'api tel que 4041 au lieu du 4040, afin d'en être sûr testez en ligne de commande : 
 
-`curl http://127.0.0.1:4040/api/tunnels` si elle ne retourne pas d'erreur c'est parfait, sinon essayez avec :
+> `curl http://127.0.0.1:4040/api/tunnels` si elle ne retourne pas d'erreur c'est parfait, sinon essayez avec :
 
-`curl http://127.0.0.1:4041/api/tunnels` et modifiez en conséquence.
+> `curl http://127.0.0.1:4041/api/tunnels` et modifiez en conséquence.
 
 Pour ma part j'utilise 2 tunnels, le HTTP utilse le port 4040 de l'api et le SSH utilise le 4041 de l'api, d'ou ce petit complément.
 
