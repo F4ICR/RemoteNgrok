@@ -56,7 +56,7 @@ La configuration a été tester avec gmail et est fonctionnelle a 100%, il sera 
 
 # Autres paramétrages
 
-Dans l'éventualité où vous voudriez mettre en place un tunnel ssh, modifiez les lignes 5 et 14 pour le port 22 ainsi que la 24 pour le découpage :
+Dans l'éventualité où vous voudriez mettre en place un tunnel ssh, modifiez les lignes 5 et 14 pour le port 22 ainsi que la 24 pour le découpage, concernant la ligne 24, il peut y avoir un port différent pour l'api tel que 4041 au lieu du 4040, afin d'en être sûr testez la ligne `curl http://127.0.0.1:4040/api/tunnels` si elle ne retourne pas d'erreur c'est parfait, sinon essayez avec `curl http://127.0.0.1:4041/api/tunnels`  :
 
 > `testNGROK=$(pgrep -f 'ngrok.yml 22' |wc -l)` (ligne 5)
 
