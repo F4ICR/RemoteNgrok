@@ -18,7 +18,7 @@ Ce tunnel bien entendu est dédié dans le cadre du projet RRFRemote mais pourra
 
 Après avoir créé un compte sur ngrok, procédure qui est extrêmement simplifié, vous pouvez bénéficier d'un service de tunnel gratuit.
 
-Télécharger la version correspondant à votre architecture depuis votre console ssh avec la commande wget : 
+Télécharger la version NGROK correspondant à votre architecture depuis votre console ssh avec la commande wget : 
 
 `wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip` (Linux ARM32 bits)
 
@@ -30,13 +30,17 @@ Décompresser l'archive ngrok en .zip ou .tgz sur votre système depuis le répe
 
 Sur votre compte ngrok, une [clé d'authentification](https://dashboard.ngrok.com/get-started/setup) a été créée
 
-Ensuite, depuis la console ssh, exécuter la commande dans le répertoire d'installation ngrok afin de le rendre executable :
+Ensuite, depuis la console ssh, exécuter la commande suivante dans le répertoire d'installation ngrok afin de le rendre executable :
 
 `chmod +x ngrok`
 
-Saisir dans votre console ssh votre clé d'authentification :
+Saisir dans votre console ssh votre clé d'authentification avec la commande suivante :
 
 `./ngrok authtoken VOTRE_CLE`
+
+Téléchargez le script RemoteNgrok.sh que j'ai écrit avec wget depuis votre répertoire de travail qui est /root/ dans notre exemple, (dans la mesure ou il n'y a qu'un seul fichier, je ne vois pas la nécéssité d'utiliser les commandes GIT)
+
+`wget https://github.com/F4ICR/RemoteNgrok/blob/main/RemoteNgrok.sh`
 
 Ne poursuivez pas la suite du tuto sur le site de ngrok, le script [RemoteNgr.sh](https://github.com/F4ICR/RemoteNgrok/blob/main/RemoteNgrok.sh) que j'ai écrit va se charger du reste, j'explique :
 
