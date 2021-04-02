@@ -28,11 +28,11 @@ Décompresser l'archive ngrok en .zip ou .tgz sur votre système depuis le répe
 
 `unzip VOTRE_ARCHIVE.zip` ou `tar xzf VOTRE_ARCHIVE.tgz`
 
-Sur votre compte ngrok, une [clé d'authentification](https://dashboard.ngrok.com/get-started/setup) a été créée
-
 Ensuite, depuis la console ssh, exécuter la commande suivante dans le répertoire d'installation ngrok afin de le rendre executable :
 
 `chmod +x ngrok`
+
+Sur votre compte ngrok, une [clé d'authentification](https://dashboard.ngrok.com/get-started/setup) a été créée
 
 Saisir dans votre console ssh votre clé d'authentification avec la commande suivante :
 
