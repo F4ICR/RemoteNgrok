@@ -18,7 +18,15 @@ Ce tunnel bien entendu est dédié dans le cadre du projet RRFRemote mais pourra
 
 Après avoir créé un compte sur ngrok, procédure qui est extrêmement simplifié, vous pouvez bénéficier d'un service de tunnel gratuit.
 
-Télécharger la version correspondant à votre architecture, installé ngrok sur votre système dans le répertoire de votre choix, pour ma part j'ai opté pour le répèrtoire /root/
+Télécharger la version correspondant à votre architecture depuis votre console ssh avec la commande wget : 
+
+`wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip` (Linux ARM32 bits)
+
+`wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz` (Linux ARM 64 bits)
+
+Décompresser l'archive ngrok en .zip ou .tgz sur votre système depuis le répertoire ou elle a été téléchargé, pour ma part j'ai opté pour le répèrtoire /root/
+
+`unzip VOTRE_ARCHIVE.zip` ou `tar xzf VOTRE_ARCHIVE.tgz`
 
 Sur votre compte ngrok, une [clé d'authentification](https://dashboard.ngrok.com/get-started/setup) a été créée
 
@@ -38,11 +46,11 @@ Pour finir le script envoie le fichier mail.txt sur votre adresse mail que vous 
 
 Afin d'automatiser ce tunnel, je crée dans le crontab une tache qui vérifiera régulièrement si le tunnel est actif entre autre et qui permet également de l'exécuter automatiquement à chaque démarrage de votre HotSpot ou de votre Link RRF.
 
-Depuis la console ssh exécutez la commande suivante :
+Depuis la console ssh éditez le crontab avec la commande suivante :
 
 `nano /etc/crontab`
 
-Insèrez à la fin du fichier :
+Insèrez à la fin du fichier la ligne qui suit :
 
 `* * * * * root /root/RemoteNgrok.sh >/dev/null 2>&1`
 
