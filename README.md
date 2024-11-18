@@ -1,4 +1,5 @@
-# RemoteNgrok (Ne fonctionne plus de façon optimal avec le plan gratuit) Voir nouveau projet "Localtunnel"
+# RemoteNgrok (Ne fonctionne plus de façon optimal avec le plan gratuit)
+### Trop de changement dans la politique de Ngrok, donc voir le projet Localtunnel pour une utilisation avec le projet RRFRemote de F4HWN
 ### Prise de contrôle distant derrière un routeur 4G via un tunnel ngrok en version gratuite
 
 Bonjour à tous, 
