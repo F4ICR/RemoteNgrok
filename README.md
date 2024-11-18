@@ -1,4 +1,4 @@
-# RemoteNgrok
+# RemoteNgrok (NE FONCTIONNE PLUS AVEC LE PLAN GRATUIT DE FACON OPTIMAL)
 ### Prise de contrôle distant derrière un routeur 4G via un tunnel ngrok en version gratuite
 
 Bonjour à tous, 
